@@ -1,5 +1,150 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #header
+    #logo
+      a(href="#")
+        img(src="images/logo.png")
+    ul#main-menu
+      li
+        a(href="#about") About
+      li
+        a(href="#experience") Experience
+      li
+        a(href="#work") Work
+      li
+        a(href="#connect") Connect
+  #container
+    // Begin About Section
+    #about
+      h1 About
+      ul#top-social
+        li
+          a.facebook(href="#") Facebook
+        li
+          a.twitter(href="#") Twitter
+        li
+          a.linkedin(href="#") LinkedIn
+      .top-divider
+      .content
+        img(src="images/designer-photo.jpg")
+        h2 My Name is John Doe, and I am a Designer
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum ipsum sit amet posuere.
+        ul#service-icons
+          li.services-design Design
+          li.services-mobile Mobile
+          li.services-film Film
+          li.services-photo Photo
+      .bottom-divider
+    // End About Section
+    // Begin Experience Section
+    #experience
+      h1 Experience
+      .top-divider
+      .content
+        .col
+          h2 Description of Work
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum
+        .col.col-mid
+          h2 Description of Work
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum
+        .col
+          h2 Description of Work
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum
+      .bottom-divider
+    // End Experience Section
+    // Begin Work Section
+    #work
+      h1 Work
+      .top-divider
+      .content
+        ul#work-thumbs
+          li
+            a(href="images/work/work-full1.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb1.jpg")
+          li
+            a(href="images/work/work-full2.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb2.jpg")
+          li
+            a(href="images/work/work-full3.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb3.jpg")
+          li.last
+            a(href="images/work/work-full4.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb4.jpg")
+          li
+            a(href="images/work/work-full5.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb5.jpg")
+          li
+            a(href="images/work/work-full6.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb6.jpg")
+          li
+            a(href="images/work/work-full7.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb7.jpg")
+          li.last
+            a(href="images/work/work-full8.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb8.jpg")
+          li
+            a(href="images/work/work-full9.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb9.jpg")
+          li
+            a(href="images/work/work-full10.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb10.jpg")
+          li
+            a(href="images/work/work-full11.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb11.jpg")
+          li.last
+            a(href="images/work/work-full12.jpg", rel="prettyPhoto[1]", title="Image Description")
+              img(src="images/work/work-thumb12.jpg")
+      .bottom-divider
+    // End Work Section
+    // Begin Connect Section
+    #connect
+      h1 Connect
+      .top-divider
+      .content
+        #form
+          form(action="#")
+            span Name
+            input.name(type="text", name="name")
+            span Email
+            input.email(type="text", name="email")
+            span Message
+            textarea.message
+            input.submit(type="submit", name="submite", value="Submit")
+        #social-footer
+          h2 Follow Me:
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper
+          ul#sm-links
+            li
+              a.facebook(href="#") Facebook
+            li
+              a.twitter(href="#") Twitter
+            li
+              a.dribble(href="#") Dribble
+            li
+              a.vimeo(href="#") Vimeo
+            li
+              a.youtube(href="#") YouTube
+            li
+              a.linkedin(href="#") LinkedIn
+    // End Connect Section
+  // The JavaScript
+  script(type="text/javascript").
+      $(function () {
+          $('#main-menu li a').bind('click', function (event) {
+              var $anchor = $(this);
+              $('html, body').stop().animate({
+                  scrollTop: $($anchor.attr('href')).offset().top
+              }, 1500, 'easeInOutExpo');
+              event.preventDefault();
+          });
+      });
+      $(document).ready(function () {
+          $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, deeplinking: false});
+      });
+  
