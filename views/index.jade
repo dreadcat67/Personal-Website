@@ -1,150 +1,152 @@
-extends layout
+extends ../public/layout
 
 block content
-  #header
-    #logo
-      a(href="#")
-        img(src="images/logo.png")
-    ul#main-menu
-      li
-        a(href="#about") About
-      li
-        a(href="#experience") Experience
-      li
-        a(href="#work") Work
-      li
-        a(href="#connect") Connect
-  #container
-    // Begin About Section
-    #about
-      h1 About
-      ul#top-social
-        li
-          a.facebook(href="#") Facebook
-        li
-          a.twitter(href="#") Twitter
-        li
-          a.linkedin(href="#") LinkedIn
-      .top-divider
-      .content
-        img(src="images/designer-photo.jpg")
-        h2 My Name is John Doe, and I am a Designer
-        p
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum ipsum sit amet posuere.
-        ul#service-icons
-          li.services-design Design
-          li.services-mobile Mobile
-          li.services-film Film
-          li.services-photo Photo
-      .bottom-divider
-    // End About Section
-    // Begin Experience Section
-    #experience
-      h1 Experience
-      .top-divider
-      .content
-        .col
-          h2 Description of Work
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum
-        .col.col-mid
-          h2 Description of Work
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum
-        .col
-          h2 Description of Work
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum
-      .bottom-divider
-    // End Experience Section
-    // Begin Work Section
-    #work
-      h1 Work
-      .top-divider
-      .content
-        ul#work-thumbs
-          li
-            a(href="images/work/work-full1.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb1.jpg")
-          li
-            a(href="images/work/work-full2.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb2.jpg")
-          li
-            a(href="images/work/work-full3.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb3.jpg")
-          li.last
-            a(href="images/work/work-full4.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb4.jpg")
-          li
-            a(href="images/work/work-full5.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb5.jpg")
-          li
-            a(href="images/work/work-full6.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb6.jpg")
-          li
-            a(href="images/work/work-full7.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb7.jpg")
-          li.last
-            a(href="images/work/work-full8.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb8.jpg")
-          li
-            a(href="images/work/work-full9.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb9.jpg")
-          li
-            a(href="images/work/work-full10.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb10.jpg")
-          li
-            a(href="images/work/work-full11.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb11.jpg")
-          li.last
-            a(href="images/work/work-full12.jpg", rel="prettyPhoto[1]", title="Image Description")
-              img(src="images/work/work-thumb12.jpg")
-      .bottom-divider
-    // End Work Section
-    // Begin Connect Section
-    #connect
-      h1 Connect
-      .top-divider
-      .content
-        #form
-          form(action="#")
-            span Name
-            input.name(type="text", name="name")
-            span Email
-            input.email(type="text", name="email")
-            span Message
-            textarea.message
-            input.submit(type="submit", name="submite", value="Submit")
-        #social-footer
-          h2 Follow Me:
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper
-          ul#sm-links
-            li
-              a.facebook(href="#") Facebook
-            li
-              a.twitter(href="#") Twitter
-            li
-              a.dribble(href="#") Dribble
-            li
-              a.vimeo(href="#") Vimeo
-            li
-              a.youtube(href="#") YouTube
-            li
-              a.linkedin(href="#") LinkedIn
-    // End Connect Section
-  // The JavaScript
-  script(type="text/javascript").
-      $(function () {
-          $('#main-menu li a').bind('click', function (event) {
-              var $anchor = $(this);
-              $('html, body').stop().animate({
-                  scrollTop: $($anchor.attr('href')).offset().top
-              }, 1500, 'easeInOutExpo');
-              event.preventDefault();
-          });
-      });
-      $(document).ready(function () {
-          $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, deeplinking: false});
-      });
-  
+    html
+        title W3.CSS Template
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="https://www.w3schools.com/w3css/4/w3.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        style.
+            html, body, h1, h2, h3, h4, h5, h6 {
+                font-family: "Roboto", sans-serif
+            }
+            img{
+                filter:brightness(85%);
+            }
+        body.w3-light-grey
+            // Page Container
+            .w3-content.w3-margin-top(style="max-width:1400px;")
+                // The Grid
+                .w3-row-padding
+                    // Left Column
+                    .w3-third
+                        .w3-white.w3-text-grey.w3-card-4
+                            .w3-display-container
+                                img(src="/IMG.PNG",style="width:100%", alt="Avatar")
+                                .w3-display-bottomleft.w3-container.w3-text-white
+                                    h2 Yunneng Wang
+                            .w3-container
+                                p
+                                |   |
+                                p
+                                    i.fa.fa-briefcase.fa-fw.w3-margin-right.w3-large.w3-text-blue
+                                    | Software Developer
+                                p
+                                    i.fa.fa-home.fa-fw.w3-margin-right.w3-large.w3-text-blue
+                                    | Chicago,IL,United States
+                                p
+                                    i.fa.fa-envelope.fa-fw.w3-margin-right.w3-large.w3-text-blue
+                                    | dreadcat67@gmail.com
+                                p
+                                    i.fa.fa-phone.fa-fw.w3-margin-right.w3-large.w3-text-blue
+                                    | 3124515620
+                                hr
+                                p.w3-large
+                                    b
+                                        i.fa.fa-asterisk.fa-fw.w3-margin-right.w3-text-blue
+                                        | Skills
+                                p Software Developing
+                                p Data Analysis
+                                p Image Processing
+                                p Cooking
+                                br
+                                p.w3-large.w3-text-theme
+                                    b
+                                        i.fa.fa-globe.fa-fw.w3-margin-right.w3-text-blue
+                                        | Languages
+                                p English
+                                p Chinese
+                                p Japanese
+                                br
+                        br
+                        // End Left Column
+                    // Right Column
+                    .w3-twothird
+                        .w3-container.w3-card-2.w3-white.w3-margin-bottom
+                            h2.w3-text-grey.w3-padding-16
+                                i.fa.fa-graduation-cap.fa-fw.w3-margin-right.w3-xxlarge.w3-text-blue
+                                | Education
+                            .w3-container
+                                h5.w3-opacity
+                                    b Illinois Institue of Technology
+                                h6.w3-text-blue
+                                    i.fa.fa-calendar.fa-fw.w3-margin-right
+                                    | M.S in Computer Engineering, May 2017
+                                hr
+                            .w3-container
+                                h5.w3-opacity
+                                    b Shanghai University
+                                h6.w3-text-blue
+                                    i.fa.fa-calendar.fa-fw.w3-margin-right
+                                    | B.S in Electronics and Information Technology, June 2015
+                                hr
+
+                        .w3-container.w3-card-2.w3-white
+                            h2.w3-text-grey.w3-padding-16
+                                i.fa.fa-building.fa-fw.w3-margin-right.w3-xxlarge.w3-text-blue
+                                | Work Experience
+                            .w3-container
+                                h5.w3-opacity
+                                    b Shanghai Data Solutions Co.
+                                h6.w3-text-blue
+                                    i.fa.fa-calendar.fa-fw.w3-margin-right
+                                    | June 2015 - August 2017
+                                li Network Engineer
+                                li Set up network service links, configured server ports.
+                                li Provided network services thorough clients requests in Internet Data Center (IDC).
+                                li Large-scale server trouble shooting and maintenance.
+                                hr
+                            .w3-container
+                                h5.w3-opacity
+                                    b Balance Electronics
+                                h6.w3-text-blue
+                                    i.fa.fa-calendar.fa-fw.w3-margin-right
+                                    | June 2014 - August 2017
+                                li Network Engineer
+                                li Local area network (LANs) analysis and maintenance.
+                                li Network designing and implementation.
+
+                                hr
+                        .w3-container.w3-card-2.w3-white
+                            h2.w3-text-grey.w3-padding-16
+                                i.fa.fa-sitemap.fa-fw.w3-margin-right.w3-xxlarge.w3-text-blue
+                                | Projects
+                            .w3-container
+                                h5.w3-opacity
+                                    b Android controlled robot cart
+                                li Designed and built a battery driven 4-motor robot car with robotic arm, video camera, and Field Programming Gates Array (FPGA) chip board.
+                                li Created an android application as the controller to send the control signal via Wi-Fi module to the FPGA board, and receive the video information from the video camera.
+                                li The robot car can move around, pick up objectives, and send back video signals as the android application control it.
+                                li The project was designed to have applications in rescuing effort and scientific surveys.
+                                hr
+                            .w3-container
+                                h5.w3-opacity
+                                    b Real time peer-to-peer (P2P) file sharing system
+                                li Developed an indexing server containing a list of files registered in the system, and multiple peer clients who own the files.
+                                li The peer communicates with the indexing server to locate required file and download from other peers, with real time update in file system.
+                                li Java Eclipse with Remote Methods Invocation (RMI) were used in the development.
+                                li This program was designed to satisfy uses cases for small businesses.
+                                hr
+                            .w3-container
+                                h5.w3-opacity
+                                    b Image enhancement system for image reconstruction and image recovery
+                                li Applied Prewitt operators to reduce noises and realize edge enhancement.
+                                li Implemented pseudoinverse filter to remove image motion blur.
+                                li Implemented tomography algorithm to realize digital image reconstruction.
+                                hr
+                        // End Right Column
+                    // End Grid
+                // End Page Container
+            footer.w3-container.w3-teal.w3-center.w3-margin-top
+                p Find me on social media.
+                i.fa.fa-facebook-official.w3-hover-opacity
+                i.fa.fa-instagram.w3-hover-opacity
+                i.fa.fa-snapchat.w3-hover-opacity
+                i.fa.fa-pinterest-p.w3-hover-opacity
+                i.fa.fa-twitter.w3-hover-opacity
+                i.fa.fa-linkedin.w3-hover-opacity
+                p
+                    | Powered by
+                    a(href="https://www.w3schools.com/w3css/default.asp", target="_blank") w3.css
